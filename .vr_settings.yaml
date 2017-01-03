@@ -8,15 +8,13 @@ run_command_line: ruby main.rb
 open_files:
 - "/home/yuri/visualruby/diploma/main.rb"
 - "/home/yuri/visualruby/diploma/src/ZKP.rb"
-- "/home/yuri/visualruby/diploma/lib/zkp.rb"
-- "/home/yuri/visualruby/diploma/lib/curve.rb"
 open_folders:
 - "/home/yuri/visualruby/diploma"
 - "/home/yuri/visualruby/diploma/lib"
 - "/home/yuri/visualruby/diploma/src"
 - "/home/yuri/visualruby/diploma/src/glade"
 current_file: "/home/yuri/visualruby/diploma/src/ZKP.rb"
-current_line: 18
+current_line: 37
 rdoc_command_line: rdoc -x README
 browser: firefox
 backup_path: "/home/eric"

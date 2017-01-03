@@ -1,6 +1,6 @@
 require_rel '../lib/'
 
-class ZKP #(change name)
+class ZKP 
   
   include GladeGUI
 
