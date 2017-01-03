@@ -1,20 +1,18 @@
 --- !ruby/object:VR_ENV
-vr_yaml_file: "/home/yuri/visualruby/diploma/.vr_settings.yaml"
-width: 1424
-height: 758
+vr_yaml_file: "/home/yuri/Documents/Ruby/zkp_gui/.vr_settings.yaml"
+width: 1366
+height: 738
 panel_pos: 360
 notebook_panel_position: 456
 run_command_line: ruby main.rb
 open_files:
-- "/home/yuri/visualruby/diploma/main.rb"
-- "/home/yuri/visualruby/diploma/src/ZKP.rb"
+- "/home/yuri/Documents/Ruby/zkp_gui/Untitled"
 open_folders:
-- "/home/yuri/visualruby/diploma"
-- "/home/yuri/visualruby/diploma/lib"
-- "/home/yuri/visualruby/diploma/src"
-- "/home/yuri/visualruby/diploma/src/glade"
-current_file: "/home/yuri/visualruby/diploma/src/ZKP.rb"
-current_line: 37
+- "/home/yuri/Documents/Ruby/zkp_gui"
+- "/home/yuri/Documents/Ruby/zkp_gui/src"
+- "/home/yuri/Documents/Ruby/zkp_gui/src/glade"
+current_file: "/home/yuri/Documents/Ruby/zkp_gui/Untitled"
+current_line: 1
 rdoc_command_line: rdoc -x README
 browser: firefox
 backup_path: "/home/eric"
