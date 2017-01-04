@@ -16,7 +16,7 @@ module Ecc
 
     def point_count
       count = 1
-      cur_point = Point.new(@pointG.x, @pointG.y)
+      cur_point = Point.new(pointG.x, pointG.y)
       @curve.fp.times do |k|
         begin
           np_point = @curve.mod_mult cur_point, k + 1
@@ -48,7 +48,7 @@ module Ecc
       @_r2 = _r2.nil? ? rand(1..self._n - 1) : _r2
     end
 
-    def generate_rand_x(_x)
+    def generate_rand_x(_x = nil)
       @_x = _x.nil? ? rand(1..self._n - 1) : _x
     end
 
@@ -79,11 +79,11 @@ module Ecc
     def run_check
       p1 = @curve.mod_add @_y1, @_y2
       p2 = @curve.mod_inv(1, @_kb, @_n)
-      p @_kb, p2
       p3 = @curve.mod_mult p1, p2
       p4 = @curve.mod_sub p3, @_y3
       p5 = @curve.mod_mult @_Ya, @_x
-      @curve.mod_sub p4, p5
+      res = @curve.mod_sub p4, p5
+      res == @_y
     end
   end
 end
