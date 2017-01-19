@@ -8,7 +8,7 @@ class ZKP
     if params.size != 3
       alert 'Должно быть 3 параметра: p, a, b'
       return
-    end 
+    end
     begin
       _p = params[0]
       _a = params[1]
@@ -33,8 +33,8 @@ class ZKP
     q_y = paramsQ[1]
 
     if g_x.nil? || g_y.nil? || q_x.nil? || q_y.nil?
-      alert 'Проверьте заполнение параметров'      
-      return 
+      alert 'Проверьте заполнение параметров'
+      return
     end
 
     begin
@@ -121,7 +121,7 @@ class ZKP
     @builder['entry8'].text = @bob._x.to_s
   end
 
-  def b_set_rand_r__clicked(*_args)
+  def b_set_x__clicked(*_args)
     x = @builder['entry8'].text.to_i
 
     @bob.generate_rand_x x
